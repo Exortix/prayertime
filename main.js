@@ -2,7 +2,7 @@ var myArray = []
 
 $.ajax({
     method:'GET',
-    url:'http://api.aladhan.com/v1/timingsByCity?city=Muharaq&country=Bahrains&method=8',
+    url:'https://api.aladhan.com/v1/timingsByCity?city=Muharaq&country=Bahrains&method=8',
     success:function (response) {
         myArray = response.data
         buildTable(myArray)
